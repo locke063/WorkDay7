@@ -7,8 +7,19 @@ Public Class Form1
         Dim st As String
         st = InputBox("Please type the initial string")
 
-        ' Compute the result
+        ' Compute the 
+
         Dim result As String = ""
+        Dim i As Integer = 0
+
+        For i = st.Length - 1 To 0 Step -1 'st.length-1 how we get the last char in the string because it is 0 based counting'
+            Dim c As Char
+            c = st.Chars(i)
+
+            result = result & c
+
+        Next
+        MessageBox.Show(result)
 
 
 
